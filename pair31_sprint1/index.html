@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bug World</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/welcome_screen.css">
+    <link rel="stylesheet" href="css/setup_screen.css">
+</head>
+<body>
+
+
+<div id="welcomeScreen" class="welcomeScreen">
+    <h1>Welcome to the bug world!</h1>
+    <button id="welcomeScreen__startButton">Start!</button>
+</div>
+
+<div id="setupScreen" class="setupScreen">
+    <h1>Bug world</h1>
+    <table>
+        <tr>
+            <td class="firstCol">
+                <label for="setupScreen__worldFile">Please upload a world map file:</label>
+            </td>
+            <td class="lastCol">
+                <input type="file" id="setupScreen__worldFile">
+            </td>
+        </tr>
+        <tr>
+            <td class="firstCol">
+                <label for="setupScreen__brainOneFile">Please upload a bug assembler source code file #1:</label>
+            </td>
+            <td class="lastCol">
+                <input type="file" id="setupScreen__brainOneFile">
+            </td>
+        </tr>
+        <tr>
+            <td class="firstCol">
+                <label for="setupScreen__brainTwoFile">Please upload a bug assembler source code file #2:</label>
+            </td>
+            <td class="lastCol">
+                <input type="file" id="setupScreen__brainTwoFile">
+            </td>
+        </tr>
+        <tr>
+            <td class="firstCol">
+                <label for="setupScreen__iterationsNum">Please select the number of iterations:</label>
+            </td>
+            <td class="lastCol">
+                <select id="setupScreen__iterationsNum">
+                    <option value="100">100</option>
+                    <option value="500">500</option>
+                    <option value="1000">1,000</option>
+                    <option value="5000">5,000</option>
+                    <option value="10000">10,000</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="firstCol">
+                <label for="setupScreen__enableLogging">Do you want to log the results of the session?</label>
+            </td>
+            <td class="lastCol">
+                <input type="checkbox" id="setupScreen__enableLogging">
+            </td>
+        </tr>
+    </table>
+    <button id="setupScreen__nextButton">Next</button>
+</div>
+
+<script src="src/model/colors.js"></script>
+<script src="src/model/world_cell.js"></script>
+<script src="src/model/world.js"></script>
+
+<script src="src/bug_asm/instructions.js"></script>
+<script src="src/bug_asm/brain_parser.js"></script>
+
+<script src="src/world_parser/world_parser.js"></script>
+
+<script src="src/view/welcome_screen/welcome_screen.js"></script>
+<script src="src/view/setup_screen/setup_screen.js"></script>
+
+<script src="src/main.js"></script>
+
+</body>
+</html>

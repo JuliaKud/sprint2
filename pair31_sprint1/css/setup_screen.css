@@ -1,0 +1,41 @@
+.setupScreen {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.setupScreen h1 {
+    margin-bottom: 150px;
+}
+
+.setupScreen table {
+    width: 600px;
+
+    border-spacing: 0 30px;
+}
+
+.setupScreen table .firstCol {
+    text-align: start;
+}
+
+.setupScreen table .lastCol {
+    text-align: center;
+}
+
+.setupScreen table .lastCol input {
+    max-width: 180px;
+}
+
+.setupScreen button {
+    width: 150px;
+    height: 50px;
+
+    font-size: 18px;
+
+    margin-top: 150px;
+}
+
