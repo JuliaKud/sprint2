@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/welcome_screen.css">
     <link rel="stylesheet" href="css/setup_screen.css">
+    <link rel="stylesheet" href="css/game_screen.css">
 </head>
 <body>
 
@@ -69,6 +70,26 @@
     <button id="setupScreen__nextButton">Next</button>
 </div>
 
+<div id="gameScreen" class="gameScreen">
+    <div class="game">
+        <canvas id="myCanvas" style="flex: 1;"></canvas>
+        <div class="flex-containerV textLeft" style="flex: 0.5; font-size: medium;">
+            <button id="optionsBtn">Options</button>
+            <button id="quitBtn">Quit</button>
+            <p>Iterations: <span id="iterationsDisp"></span></p>
+            <p>Amount of undetected food: <span id="uFood"></span></p>
+            <p>Red bugs remaining: <span id="redBugs"></span></p>
+            <p>Red bugs killed: <span id="redBugsK"></span></p>
+            <p>Food brought home for red bugs: <span id="collectedR"></span></p>
+            <p>Black bugs remaining: <span id="blackBugs"></span></p>
+            <p>Black bugs killed: <span id="blackBugsK"></span></p>
+            <p>Food brought home for black bugs: <span id="collectedB"></span></p>
+        </div>
+    </div>
+    <button id="LogsBtn">Logs</button>
+</div>
+
+
 <script src="src/model/colors.js"></script>
 <script src="src/model/world_cell.js"></script>
 <script src="src/model/world.js"></script>
@@ -80,6 +101,7 @@
 
 <script src="src/view/welcome_screen/welcome_screen.js"></script>
 <script src="src/view/setup_screen/setup_screen.js"></script>
+<script src="src/view/game_screen/canvas_drawer.js" defer></script>
 
 <script src="src/main.js"></script>
 

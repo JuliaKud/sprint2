@@ -5,6 +5,7 @@ COLOR_TO_BRAIN_INPUT_ELEMENT[Colors.BLACK] = document.getElementById("setupScree
 class SetupScreen {
     static onNextButtonPressed() {
         document.getElementById("setupScreen").style.display = "none";
+        document.getElementById("gameScreen").style.display = null;
     }
 
     static onWorldFileChanged(event) {

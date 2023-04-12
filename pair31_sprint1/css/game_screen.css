@@ -1,0 +1,62 @@
+.gameScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+}
+
+#myCanvas {
+    flex: 0.8;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.flex-containerV {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.flex-containerV p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.game .flex-containerV {
+    flex: 1;
+    font-size: medium;
+}
+
+#optionsBtn,
+#quitBtn {
+    margin-top: 10px;
+    font-size: 18px;
+    width: 150px;
+    height: 50px;
+}
+
+#LogsBtn {
+    font-size: 18px;
+    width: 600px;
+    height: 50px;
+    position: absolute;
+    bottom: 100px;
+}
+
+
