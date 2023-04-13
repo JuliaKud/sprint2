@@ -1,0 +1,20 @@
+.quitPopUp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.quitPopUp h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.quitPopUp button {
+    display: inline-block;
+    margin: 20px 10px 0;
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 160px;
+}

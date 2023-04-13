@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/welcome_screen.css">
     <link rel="stylesheet" href="css/setup_screen.css">
     <link rel="stylesheet" href="css/game_screen.css">
+    <link rel="stylesheet" href="css/quit_popUp.css">
 </head>
 <body>
 
@@ -86,9 +87,15 @@
             <p>Food brought home for black bugs: <span id="collectedB"></span></p>
         </div>
     </div>
+
     <div id="logsBox"></div>
 </div>
 
+<div id="quitPopUp" class="quitPopUp">
+        <h2>Do you really want to quit?</h2>
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+</div>
 
 <script src="src/model/colors.js"></script>
 <script src="src/model/world_cell.js"></script>
@@ -102,6 +109,8 @@
 <script src="src/view/welcome_screen/welcome_screen.js"></script>
 <script src="src/view/setup_screen/setup_screen.js"></script>
 <script src="src/view/game_screen/canvas_drawer.js" defer></script>
+<script src="src/view/game_screen/game_screen.js"></script>
+<script src="src/view/pop_ups/quit_popUp.js"></script>
 
 <script src="src/main.js"></script>
 
